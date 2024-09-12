@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply bg-black bg-opacity-20 backdrop-blur-xl filter hover:opacity-90
+    smooth hover:scale-95 rounded-full px-6 py-3 border border-white/50
+    cursor-pointer text-white;
+  }
+  .smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .input {
+    @apply w-2/4 rounded-xl border-white/20 border z-50 bg-[#0e0d0d] backdrop-blur-xl
+        bg-opacity-25 filter text-white py-8 px-8 outline-none smooth hover:opacity-90;
+  }
+  .navLink {
+    @apply text-sm hover:bg-gray-100 rounded-2xl px-2 py-1;
+  }
+}
